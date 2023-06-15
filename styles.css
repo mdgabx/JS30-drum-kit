@@ -18,7 +18,7 @@ main {
     gap: 2rem;
     border: 1px solid #000;
     width: 40%;
-    margin: 6rem auto;
+    margin: 10rem auto;
     border-radius: 25px;
     padding: 2rem;
 }
@@ -34,6 +34,19 @@ kbd {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    transition: all .07s ease;
 }
 
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+
+@media only screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
